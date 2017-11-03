@@ -24,7 +24,10 @@
 
         var childNodes = this.childNode.childNodes;
         this.stepLen =  childNodes.length > 0 ? childNodes[0].clientHeight : 0;// 步长
-
+        //防止适配单位rem 小数造成偏差
+        for(var li=0; li< childNodes.length;li++){
+            childNodes[li].style.height=this.stepLen+'px';
+        }
         // 设置参数
         for(var i in params){
             this.options[i] = params[i];
