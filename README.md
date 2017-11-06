@@ -37,5 +37,5 @@ new DatePicker({
 });
 ```
 
-修改日志：
+##修改日志：
     1.样式适配修改，按照flexible适配方案，基准尺寸iPhone6，字体75px
